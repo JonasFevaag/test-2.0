@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+  }
+
+  nav{
+    float: left; /*Gjør at child-elementer som flyter (float), holder seg inne i boksen */
+    width: 100%;
+    background-color: #dddddd;  
+    position:sticky; /*Gjør at menylinja fester seg til et fast punkt i vinduet når man skroller. Hvor den fester seg, angir man med top, left, right og/eller bottom, som på neste linje.*/
+    top: 0px;
+  }
+  
+  nav ul {
+    margin:0;
+    padding:0;
+  }
+  
+  nav li {
+    float: left;
+    list-style-type: none;
+    border-right: 1px solid #f06d06;
+  }
+  
+  /*CSS-regelen under gjør at den siste lenka flyter helt til høyre i vinduet i stedet for til venstre ved siden av de andre. Ta bort kommentarmarkørene for å se hvordan det virker.*/
+  /*nav li:last-child{
+    float: right;
+    border-right: none;
+    border-left: 1px solid #f06d06;
+  }*/
+  
+  nav a {
+    display: block;
+    text-decoration:none;
+    color: black;
+    padding: 1em;
+    
+  }
+  
+  nav a:hover{
+    background-color: black;
+    color: #dddddd;
+  }
